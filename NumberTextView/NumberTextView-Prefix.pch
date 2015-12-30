@@ -18,5 +18,6 @@
 #import "UITextView+Placeholder.h"
 #import <Masonry.h>
 #import <ReactiveCocoa/ReactiveCocoa.h>
+#import "UITextField+Helper.h"
 
 #endif 

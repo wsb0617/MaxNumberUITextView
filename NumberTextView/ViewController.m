@@ -17,18 +17,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    
-    
+
     NumberofwordsTextView *numberTextView = [[NumberofwordsTextView alloc] init];
     numberTextView.frame = CGRectMake(15, 50 , 300 , 80);
-    numberTextView.wordsMaxNumer = 36;
+    numberTextView.wordsMaxNumer = 140;
     numberTextView.placeHolder = @"只需要传入一个最大值wordsMaxNumer";
     numberTextView.textFont = [UIFont systemFontOfSize:12];
     [self.view addSubview:numberTextView];
-    
-    
-    
+      
 }
 
 - (void)didReceiveMemoryWarning {

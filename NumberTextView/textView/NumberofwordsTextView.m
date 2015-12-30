@@ -10,6 +10,7 @@
 
 
 @interface NumberofwordsTextView()
+<UITextViewDelegate>
 
 @property(strong ,nonatomic)UILabel       *numberLabel;
 @property(strong ,nonatomic)UITextView    *textView;
@@ -100,6 +101,7 @@
     _textView.scrollEnabled = YES;
     _textView.returnKeyType = UIReturnKeySend;
     _textView.enablesReturnKeyAutomatically = YES;
+    _textView.delegate = self;
     [self addSubview:_textView];
     
     _numberLabel = [[UILabel alloc] init];
@@ -139,10 +141,10 @@
         self.emojiNumer = [text emojiNumberOfSting];
         self.inputWordNumber = [text convertToInt] - self.emojiNumer;
         self.numberLabel.text = [NSString stringWithFormat:@"%ld/%ld",_inputWordNumber,_wordsMaxNumer];
-                NSLog(@"text is %@", text);
-                 NSLog(@"emojiNumer is ---- %ld", self.emojiNumer);
-                NSLog(@"inputWordNumber is %ld", self.inputWordNumber);
-                NSLog(@"subWordNumber is ---- %ld", self.subWordNumber);        
+//                NSLog(@"text is %@", text);
+//                 NSLog(@"emojiNumer is ---- %ld", self.emojiNumer);
+//                NSLog(@"inputWordNumber is %ld", self.inputWordNumber);
+//                NSLog(@"subWordNumber is ---- %ld", self.subWordNumber);        
         if (![self isCanInput]) {
             if (self.textView.text.length >= self.subWordNumber) {
                 _text = [text substringToIndex:self.subWordNumber];
@@ -177,5 +179,11 @@
     
 }
 
+#pragma mark UITextViewDelegate
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [self endEditing:YES];
+}
 
 @end

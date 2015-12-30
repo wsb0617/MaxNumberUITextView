@@ -11,6 +11,7 @@
 		B6694B941C3259670075C7F5 /* UITextView+Placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = B6694B921C3259670075C7F5 /* UITextView+Placeholder.m */; };
 		B6694B9A1C325BD60075C7F5 /* NSString+EmojiAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B6694B971C325BD60075C7F5 /* NSString+EmojiAdditions.m */; };
 		B6694B9B1C325BD60075C7F5 /* NSString+EmojiNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = B6694B991C325BD60075C7F5 /* NSString+EmojiNumber.m */; };
+		B6772A991C33D90800CE1CD2 /* UITextField+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = B6772A981C33D90800CE1CD2 /* UITextField+Helper.m */; };
 		B6D0C9D01C32579D002D88B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D0C9CF1C32579D002D88B2 /* main.m */; };
 		B6D0C9D31C32579D002D88B2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D0C9D21C32579D002D88B2 /* AppDelegate.m */; };
 		B6D0C9D61C32579D002D88B2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D0C9D51C32579D002D88B2 /* ViewController.m */; };
@@ -49,6 +50,8 @@
 		B6694B971C325BD60075C7F5 /* NSString+EmojiAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+EmojiAdditions.m"; sourceTree = "<group>"; };
 		B6694B981C325BD60075C7F5 /* NSString+EmojiNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+EmojiNumber.h"; sourceTree = "<group>"; };
 		B6694B991C325BD60075C7F5 /* NSString+EmojiNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+EmojiNumber.m"; sourceTree = "<group>"; };
+		B6772A971C33D90800CE1CD2 /* UITextField+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Helper.h"; sourceTree = "<group>"; };
+		B6772A981C33D90800CE1CD2 /* UITextField+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Helper.m"; sourceTree = "<group>"; };
 		B6D0C9CB1C32579D002D88B2 /* NumberTextView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NumberTextView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6D0C9CF1C32579D002D88B2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B6D0C9D11C32579D002D88B2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -121,6 +124,8 @@
 				B6694B901C3259670075C7F5 /* NumberofwordsTextView.m */,
 				B6694B911C3259670075C7F5 /* UITextView+Placeholder.h */,
 				B6694B921C3259670075C7F5 /* UITextView+Placeholder.m */,
+				B6772A971C33D90800CE1CD2 /* UITextField+Helper.h */,
+				B6772A981C33D90800CE1CD2 /* UITextField+Helper.m */,
 			);
 			path = textView;
 			sourceTree = "<group>";
@@ -384,6 +389,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6694B9A1C325BD60075C7F5 /* NSString+EmojiAdditions.m in Sources */,
+				B6772A991C33D90800CE1CD2 /* UITextField+Helper.m in Sources */,
 				B6D0C9D61C32579D002D88B2 /* ViewController.m in Sources */,
 				B6694B9B1C325BD60075C7F5 /* NSString+EmojiNumber.m in Sources */,
 				B6D0C9D31C32579D002D88B2 /* AppDelegate.m in Sources */,
