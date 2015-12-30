@@ -1,0 +1,22 @@
+//
+//  NumberTextView-Prefix.pch
+//  NumberTextView
+//
+//  Created by wsb0617 on 15/12/29.
+//  Copyright © 2015年 wsb0617. All rights reserved.
+//
+
+#ifndef NumberTextView_Prefix_pch
+#define NumberTextView_Prefix_pch
+
+
+// 颜色(RGB)
+#define RGB_COLOR(r, g, b)       [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:1]
+
+#import "NSString+EmojiAdditions.h"
+#import "NSString+EmojiNumber.h"
+#import "UITextView+Placeholder.h"
+#import <Masonry.h>
+#import <ReactiveCocoa/ReactiveCocoa.h>
+
+#endif 
