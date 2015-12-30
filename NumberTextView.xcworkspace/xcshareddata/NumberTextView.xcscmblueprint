@@ -1,14 +1,16 @@
 {
-  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "E9B87D36DCCEAE45DF41359BAEC918988EEC4694",
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "B740DDF716703CB5760CC19CE849C391A9A80901",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "B740DDF716703CB5760CC19CE849C391A9A80901" : 0,
     "E9B87D36DCCEAE45DF41359BAEC918988EEC4694" : 0,
     "9673788F7F9B419F05A9B15F2224D8DBA020CC3A" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "6C6E54F7-8AB8-4F11-93ED-080C32383509",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "B740DDF716703CB5760CC19CE849C391A9A80901" : "MaxNumberUITextView\/",
     "E9B87D36DCCEAE45DF41359BAEC918988EEC4694" : "NumberTextView\/",
     "9673788F7F9B419F05A9B15F2224D8DBA020CC3A" : ""
   },
@@ -20,6 +22,11 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/wsb0617\/MaxNumberUITextView",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9673788F7F9B419F05A9B15F2224D8DBA020CC3A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/wsb0617\/MaxNumberUITextView",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B740DDF716703CB5760CC19CE849C391A9A80901"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:https:\/\/github.com\/wsb0617\/MaxNumberUITextView.git",
