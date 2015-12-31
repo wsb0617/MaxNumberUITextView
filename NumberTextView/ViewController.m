@@ -19,7 +19,7 @@
     [super viewDidLoad];
 
     NumberofwordsTextView *numberTextView = [[NumberofwordsTextView alloc] init];
-    numberTextView.frame = CGRectMake(15, 50 , 300 , 80);
+    numberTextView.frame = CGRectMake(15, 50 , self.view.frame.size.width - 30 , 80);
     numberTextView.wordsMaxNumer = 140;
     numberTextView.placeHolder = @"只需要传入一个最大值wordsMaxNumer";
     numberTextView.textFont = [UIFont systemFontOfSize:12];
