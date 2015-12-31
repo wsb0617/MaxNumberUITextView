@@ -161,6 +161,7 @@
     
     BOOL isCan = YES;
     
+    
     if (self.inputWordNumber < self.wordsMaxNumer){
         isCan = YES;
     }else if (self.inputWordNumber == self.wordsMaxNumer) {
@@ -169,8 +170,9 @@
     }else if(self.inputWordNumber == self.wordsMaxNumer - 1){
         self.subWordNumber = self.textView.text.length + 1;
         isCan = NO;
-    }else if(self.inputWordNumber == self.wordsMaxNumer + 1){
-        self.subWordNumber = self.textView.text.length - 1;
+    }
+    else if(self.inputWordNumber == self.wordsMaxNumer + 1){
+//        self.subWordNumber = self.textView.text.length - 1;
         isCan = NO;
     }else{
         isCan = NO;
