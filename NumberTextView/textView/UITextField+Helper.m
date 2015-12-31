@@ -101,7 +101,7 @@ static void *maxLengthKey  = &maxLengthKey;
         self.subWordNumber = self.text.length + 1;
         isCan = NO;
     }else if(self.inputWordNumber == self.maxLength + 1){
-        self.subWordNumber = self.text.length - 1;
+//        self.subWordNumber = self.text.length - 1;
         isCan = NO;
     }else{
         isCan = NO;
