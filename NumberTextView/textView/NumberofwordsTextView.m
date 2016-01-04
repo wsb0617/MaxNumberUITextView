@@ -35,7 +35,7 @@
 
 - (void)setDefault{
     self.isHideNumberLabel = NO;
-    self.wordsMaxNumer = 48;
+    self.wordsMaxNumer = 0;
     self.textFont = [UIFont systemFontOfSize:12];
 }
 
@@ -43,7 +43,12 @@
 - (void)setWordsMaxNumer:(NSInteger)wordsMaxNumer{
     
     _wordsMaxNumer = wordsMaxNumer;
+    if (_wordsMaxNumer == 0) {
+        self.isHideNumberLabel = YES;
+        return;
+    }
     self.numberLabel.text = [NSString stringWithFormat:@"%ld/%ld",_inputWordNumber,_wordsMaxNumer];
+    [self textViewControl];
    
     
 }
@@ -113,7 +118,6 @@
     
     [self setAutoLayout];
     
-    [self textViewControl];
 }
 
 
@@ -188,4 +192,6 @@
     [self endEditing:YES];
 }
 
+- (void)textViewDidBeginEditing:(UITextView *)textView{
+}
 @end
