@@ -25,6 +25,14 @@ static void *emojiNumerKey = &emojiNumerKey;
 static void *inputWordNumberKey  = &inputWordNumberKey;
 static void *maxLengthKey  = &maxLengthKey;
 
+
+//
++ (void)load{
+    
+    [super load];
+    
+}
+
 #pragma mark get/set
 -(NSInteger)subWordNumber {
     NSNumber *number = objc_getAssociatedObject(self, &subWordNumberKey);
@@ -70,22 +78,22 @@ static void *maxLengthKey  = &maxLengthKey;
         if (text.length == 0) {
             return ;
         }
- 
+        
         self.emojiNumer = [text emojiNumberOfSting];
         self.inputWordNumber = [text convertToInt] - self.emojiNumer;
         
-//        NSLog(@"text is %@", text);
-//        NSLog(@"inputWordNumber is %ld", self.inputWordNumber);
-//        NSLog(@"subWordNumber is ---- %ld", self.subWordNumber);
+        //        NSLog(@"text is %@", text);
+        //        NSLog(@"inputWordNumber is %ld", self.inputWordNumber);
+        //        NSLog(@"subWordNumber is ---- %ld", self.subWordNumber);
         
         if (![self isCanInput]) {
             if (self.text.length >= self.subWordNumber) {
                 self.text = [text substringToIndex:self.subWordNumber];
-//                [HUDController showTextOnly:@"字数超过限制"];
+                //                [HUDController showTextOnly:@"字数超过限制"];
             }
         }
     }];
-
+    
 }
 
 - (BOOL)isCanInput{
@@ -101,7 +109,7 @@ static void *maxLengthKey  = &maxLengthKey;
         self.subWordNumber = self.text.length + 1;
         isCan = NO;
     }else if(self.inputWordNumber == self.maxLength + 1){
-//        self.subWordNumber = self.text.length - 1;
+        //        self.subWordNumber = self.text.length - 1;
         isCan = NO;
     }else{
         isCan = NO;
@@ -118,14 +126,14 @@ static void *maxLengthKey  = &maxLengthKey;
 //
 //- (void)textFiledEditBymaxLength:(NSUInteger)maxLength block:(void (^)())block
 //{
-//    
+//
 //    NSString *toBeString = self.text;
 //    self.emojiNumber = [NSNumber numberWithInteger:[toBeString emojiNumberOfSting]];
 //    self.textFieldInputTextLength  = [toBeString convertToInt] - [self.emojiNumber integerValue];
-//    
+//
 ////    DLog(@"textViewInputTextLength is %ld emojiNum  is %ld",self.textFieldInputTextLength ,[toBeString emojiNumberOfSting]);
-//    
-//    
+//
+//
 //    if (self.textFieldInputTextLength == maxLength){
 //        self.subLength = [NSNumber numberWithInteger:self.text.length];
 //    }else if (self.textFieldInputTextLength == maxLength - 1){
@@ -146,11 +154,11 @@ static void *maxLengthKey  = &maxLengthKey;
 //                self.text = [toBeString substringToIndex:[self.subLength integerValue]];
 //                block();
 //            }
-//            
+//
 //        }
 //        //有高亮选择的字符串，则暂不对文字进行统计和限制
 //        else{
-//            
+//
 //        }
 //    }
 //    //中文输入法以外的直接对其统计限制即可，不考虑其他语种情况
